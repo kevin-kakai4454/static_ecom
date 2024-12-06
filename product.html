@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="prod.css">
+    <title>All Products</title>
+</head>
+
+
+<?php
+// include('header.php');
+?>
+
+<body>
+    <!-- <div class="home">
+        vjh
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="home" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="categories" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trouser</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">skirt</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">T-shirts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sweaters</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Short</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dress</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container" style="margin: 5px auto;">
+        <!-- <div class="row">
+            <div class="col">
+                <h1 class="mb-2  " style="text-align: center;">Clothes</h1>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger view" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Open Modal</button>
+
+            </div>
+        </div> -->
+        <!-- <h1 id="result" class="mb-3 cat" style="text-align: center;">khkj</h1> -->
+        <div class="row box mt-3">
+            <div class="col  me-4 bg-light">
+                <div class="d-flex ">
+                    <div>
+                        <div class="card text-bg-light" style="width: 26rem;">
+                            <img src="../images/short-2.jpg" class="card-image-top" width="400px" alt="">
+                            <!-- <div class="card-body">
+                                <div class="row smallimg">
+                                    <div class="col"><img src="../images/short-3.jpg" width="60px" alt=""></div>
+                                    <div class="col"><img src="../images/short-2.jpg" width="60px" alt=""></div>
+                                    <div class="col"><img src="../images/short-1.jpg" width="60px" alt=""></div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- <div>
+                        <div class="card text-bg-light" style="width: 10rem;">
+                            <img src="../images/short-2.jpg" class="card-image-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Troser</h5>
+                                <p class="card-text">
+                                <p class="oldprice">Ksh. 400.00</p>
+                                <p class="price">Ksh. 300.00</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="rating bg-light">
+
+                </div>
+                <div class="descreption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in ut est dignissimos deleniti eaque, expedita, fugit magni ex blanditiis iusto dolore perferendis veniam totam dolores, asperiores aspernatur dolor excepturi.
+                    </p>
+                </div>
+
+                <div class="rating bg-light">
+
+                </div>
+                <div class=" row rating mt-3 bg-light">
+                    <div class="col">
+                        <button data-id="2" class="btn btn-danger mt-4 cart" >Add To Cart</button>
+                    </div>
+                    <div class="col">
+                        <button data-id="2" class="btn btn-danger mt-4 order" >Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" id="keyword" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" id="search" type="submit">Search</button>
+                        </form>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="results">
+                    <div class="results">
+                        <a class="results_link" href="">I will not close if you click outside of me. Don't even try to press escape key.</a>
+                        <hr>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="prod.js"></script>
+</body>

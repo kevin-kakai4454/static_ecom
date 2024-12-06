@@ -1,0 +1,50 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-body-tertiary{
+    /* height: 100px; */
+    background-color: aqua !important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center;     */
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 33.5%;
+}
+
+.card-body{
+    display: inline-block;
+}
+.card-text{
+    display: inline-block;
+}
+
+
+h1{
+    text-align: center;
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.desc{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.oldprice{
+    text-decoration: line-through;
+    color: brown;
+    margin-bottom: 0;
+}
+.price{
+    margin-bottom: 0;
+}

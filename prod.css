@@ -1,0 +1,17 @@
+.smallimg{
+    align-items: center;
+    align-content: center;
+}
+
+.rating{
+    height: 100px;
+
+}
+
+.descreption {
+    height: 250px;
+}
+
+.text-bg-light{
+    border: 0;
+}
