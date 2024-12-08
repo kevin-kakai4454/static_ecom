@@ -1,5 +1,5 @@
-const row = document.querySelector('.row');
-const colum = document.querySelector('.col');
+const row = document.querySelector('.rowo');
+const colum = document.querySelector('.colo');
 const home  = document.querySelector('.home');
 const image = document.querySelector('.card-image-top');
 

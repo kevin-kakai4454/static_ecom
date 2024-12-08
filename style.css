@@ -8,13 +8,13 @@
     /* height: 100px; */
     background-color: aqua !important;
 }
-.row{
+.rowo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center;     */
 }
-.col{
+.colo{
     display: flex;
     flex-direction: column;
     width: 33.5%;
@@ -47,4 +47,29 @@ h1{
 }
 .price{
     margin-bottom: 0;
+}
+.navigation{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    display: inline !important;
+    padding: 20px;
+}
+
+.view_cart{
+    display: inline-block !important;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.login{
+    display: inline-block !important;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.account{
+    display: inline-block !important;
+    text-decoration: none;
+
 }

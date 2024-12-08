@@ -8,6 +8,20 @@
 
 }
 
+.price{
+    font-size: 40px;
+    font-style: italic;
+    display: inline;
+    margin-right: 130px;
+}
+
+.discout{
+    display: inline;
+    font-size: 30px;
+    font-style: oblique;
+    color: red;
+}
+
 .descreption {
     height: 250px;
 }
