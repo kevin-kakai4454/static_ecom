@@ -7,6 +7,7 @@
 .bg-body-tertiary{
     /* height: 100px; */
     background-color: aqua !important;
+    height: 80px;
 }
 .rowo{
     display: flex;
